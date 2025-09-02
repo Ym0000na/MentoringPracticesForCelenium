@@ -26,5 +26,6 @@ public class C04 {
         // Test that the page is in the position and size you want. // Close the page.
         driver.close();
         driver.quit();
+        //
 }
 }

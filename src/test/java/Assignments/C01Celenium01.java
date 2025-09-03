@@ -1,9 +1,9 @@
-package Tests;
+package Assignments;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class C05Homework01 {
+public class C01Celenium01 {
     //create main method
     public static void main(String[] args) {
 

@@ -1,9 +1,9 @@
-package Tests;
+package Assignments;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class C06Homework02 {
+public class C02Celenium02 {
     public static void main(String[] args) {
 
         //Invoke Firefox Browser

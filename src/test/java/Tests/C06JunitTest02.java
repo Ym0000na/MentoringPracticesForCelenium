@@ -1,6 +1,7 @@
 package Tests;
 
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +11,8 @@ public class C06JunitTest02 {
     // Go to google homepage
     WebDriver driver;
     String url = "https://www.google.com/";
+
+
 // Do the following tasks by creating 3 different test methods.
 // Print "Tests are starting to run" before each test() method
     @BeforeEach
@@ -20,6 +23,8 @@ public class C06JunitTest02 {
 
          driver.get(url);
     }
+
+
 
 // Print "Tests have finished running" after each test() method
     @AfterEach
@@ -35,7 +40,30 @@ public class C06JunitTest02 {
 // Test if the URL contains "google"
 
     @Test
-    void test01(){
-        //photo in phone
+    void test01() {
+        String titleMaximized;
+        String titleMinimized;
+
+        driver.manage().window().maximize();
+        titleMaximized = driver.getTitle();
+
+        driver.manage().window().minimize();
+        titleMinimized = driver.getTitle();
+
+        Assertions.assertEquals(titleMaximized,titleMinimized,"titles are not equal");
+
+    }
+
+    @Test
+    void test02() {
+        driver.manage().window().fullscreen();
+        String title = driver.getTitle();
+
+        Assertions.assertFalse(title.contains("video"));
+    }
+
+    @Test
+    void test03() {
+        Assertions.assertTrue(driver.getCurrentUrl().toLowerCase().contains("google"));
     }
 }

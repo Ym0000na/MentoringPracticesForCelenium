@@ -1,4 +1,4 @@
-package Assignments;
+package Assignments.Day02;
 
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;

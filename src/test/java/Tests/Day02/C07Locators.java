@@ -1,4 +1,4 @@
-package Tests;
+package Tests.Day02;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;

@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C04FakerDataFormFilling {
+public class T04FakerDataFormFilling {
 
     WebDriver driver;
     String url = "https://demoqa.com/text-box";
